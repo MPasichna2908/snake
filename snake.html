@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Snake</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+   
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="600" style="border:1px solid #000000;"> </canvas>
+
+    <div id="endInfo">
+        <h3 id="gameOver">Game over</h3>
+
+        <p id="score"></p>
+        
+        <table id="scoreTable"></table>
+
+        <button id="newGameButton"> NEW GAME </button>
+    </div>
+    
+    
+    <svg id="mouse" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path  d="M 3 6 Q 5 -4 20 6 M 3 6 Q 13 8 20 6 M 3 6 Q -2 10 10 11" 
+        fill="none" stroke="black" stroke-width="1" 
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+        <circle cx="15" cy="1.7" r="1.2"  stroke="black" fill="transparent" stroke-width="1"/>
+        <circle cx="13" cy="1.2" r="1.3"  stroke="black" fill="transparent" stroke-width="1"/>
+
+        <path d="M 18 5.5 L 15 6 M 18 5.5 L 16 7 M 18 5.5 L 17 8" stroke="grey" stroke-width="0.2"/> 
+        <path d="M 16 5 L 16 4.5" stroke="blue" stroke-width="0.5"/> 
+    </svg>
+
+    
+    <script src="svgToCanvas.js"></script>
+    <script src="snake.js"></script>
+</body>
+</html>

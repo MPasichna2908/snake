@@ -1,0 +1,65 @@
+#canvas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#endInfo{
+    visibility: hidden;
+}
+
+#gameOver{
+    position:absolute;
+    top: 5%;
+    left: 40%;
+    font-size: 50px;
+}
+
+#score{
+    position:absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 30px;
+}
+
+#mouse{
+    visibility: hidden; 
+    height: 0px;
+}
+
+#scoreTable{
+    position: absolute;
+    top: 40%;
+    left:35%;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+    
+}
+#scoreTable th{
+    /* border:2px solid rgb(7, 7, 7); */
+    background-color: rgba(0, 165, 30);
+    color: white;
+}
+
+#scoreTable tr:nth-child(even){background-color: #f2f2f2;}
+
+button{
+    position: absolute;
+    top: 80%;
+    left:43%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+button:hover{
+    background-color: #459848;
+    border:1px;
+}
