@@ -1,17 +1,3 @@
-
-
-
-
-
-// ----------------newScore-----------
-
-function print(){
-  for(let i=1;i<=5;i++){
-    console.log(i,'=',localStorage.getItem(i));
-  }
-}
-
-
 function setScore(x){
   let newScore=null;
   for(let i=5;i>0;i--){
