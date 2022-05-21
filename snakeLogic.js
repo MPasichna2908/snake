@@ -14,7 +14,6 @@ let score=0;
 
 class Mouse{
     constructor(){
-        console.log('created mouse');
         this.generateMouse();
     }
     mouseParameters={x:undefined,y:undefined};
@@ -148,7 +147,6 @@ let snake=new Snake(WIDTH/2,HEIGHT/2,'left',10);
     function isBiten(){
         for(let i=1;i<snake.blocks.length; i++){
             if(snake.blocks[0].x ==snake.blocks[i].x && snake.blocks[0].y==snake.blocks[i].y){
-                console.log('is bitten');
                 soundGameOver.play();
                 clearInterval(snake.intervalMoves);
                 setScore(score);
